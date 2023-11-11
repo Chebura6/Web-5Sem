@@ -1,0 +1,67 @@
+
+header {
+    background-color: #E6E1ED;
+}
+
+.cakes {
+    font-family: sans-serif;
+}
+
+ul {
+    font-family: sans-serif;
+}
+
+
+
+.cake {
+    width: 33%
+}
+
+.name {
+    width: 33%;
+}
+
+.flower {
+    width: 33%;
+}
+
+
+
+nav {
+    background-color: #F3E8EE;
+}
+
+
+#red-velvet {
+    width: 30%;
+    /*border: 20px solid #DCEEE9;*/
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+#milk-slice {
+    width: 30%;
+}
+
+#strawberry {
+    width: 30%;
+}
+
+
+
+main {
+    background-color: #E1EDF7;
+}
+
+
+h3 {
+    font-family: sans-serif;
+}
+
+footer {
+    background-color: #DCEEE9;
+    font-family: sans-serif;
+}
+
+
+
