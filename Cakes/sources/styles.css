@@ -1,67 +1,284 @@
 
-header {
-    background-color: #E6E1ED;
-}
-
-.cakes {
-    font-family: sans-serif;
-}
-
-ul {
-    font-family: sans-serif;
-}
 
 
 
-.cake {
-    width: 33%
-}
 
-.name {
-    width: 33%;
-}
-
-.flower {
-    width: 33%;
+a {
+    font-family: Roboto;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
 }
 
 
 
-nav {
-    background-color: #F3E8EE;
+
+
+@media screen and (min-width: 700px) {
+    main {
+        background-color: #E1EDF7;
+        display: flex;
+        flex-direction: row;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3 {
+        /*width: 100%;*/
+        text-align: center;
+        font-family: Roboto;
+        /*background-color: black;*/
+        justify-self: center;
+        align-self: center;
+    }
+
+    header {
+        background-color: #E6E1ED;
+        display: flex;
+        flex-direction: row;
+    }
+    .cakeLogo {
+        width: 33%;
+    }
+
+    .name {
+        width: 33%;
+        align-self: self-start;
+    }
+
+    .flower {
+        width: 33%;
+    }
+
+    .cakes {
+        font-family: Roboto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+
+    .cake {
+        /*background-color: #000000;*/
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 2%;
+        padding: 2vw;
+        /*border: 10em bisque;*/
+        margin: 2em;
+        background-color: #f3e5f0;
+    }
+
+    .milk-slice {
+        /*background-color: black;*/
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+    }
+
+    .strawberry {
+        /*background-color: black;*/
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+    }
+    .strawberry1 {
+        /*background-color: black;*/
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+    }
+
+
+    ul {
+        font-family: sans-serif;
+    }
+
+
+    nav {
+        background-color: #F3E8EE;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+        font-weight: bold;
+        justify-content: flex-start;
+
+
+    }
+    a {
+        margin: 0.5em 0.5em 2em 1em;
+        font-size: 1.5vw;
+        /*width: 100%;*/
+    }
+
+
+    footer {
+        background-color: #DCEEE9;
+        font-family: Roboto;
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 50px) and (max-width: 699px) {
+    main {
+        background-color: #E1EDF7;
+        display: flex;
+        flex-direction: row;
+    }
+
+    header {
+        background-color: #E6E1ED;
+        flex-direction: row;
+    }
+    .cakeLogo {
+        position: fixed;
+        visibility: hidden;
+        width: 33%;
+    }
+
+    .name {
+        width: 33%;
+        /*align-self: self-start;*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flower {
+        width: 33%;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    h3 {
+        font-family: Roboto;
+        /*position: absolute;*/
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .cakes {
+        font-family: Roboto;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.1vw;
+        margin-right: 0.1vw;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 2%;
+    }
+    .wrapper {
+        width: 100%;
+        /*padding: 1vw;*/
+    }
+    .cake {
+        background-color: #f3e5f0;
+        border-radius: 2%;
+        display: flex;
+        flex-direction: column;
+        margin: 1vw 10vw 2vw;
+        padding: 2vw;
+        font-size: 0.8em;
+    }
+
+
+    .milk-slice {
+        display: flex;
+        flex-direction: column;
+        background-color: #f3e5f0;
+        border-radius: 2%;
+        margin: 1vw 10vw 2vw;
+        padding: 2vw;
+        font-size: 0.8em;
+    }
+
+    .strawberry {
+        /*background-color: black;*/
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .strawberry1 {
+        /*background-color: black;*/
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        margin: auto auto 3em;
+    }
+
+
+    ul {
+        font-family: sans-serif;
+    }
+
+
+    nav {
+        background-color: #F3E8EE;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+        font-weight: bold;
+        justify-content: flex-start;
+    }
+
+    a {
+        margin: 0.5em 0.5em 2em 1em;
+        font-size: 2.5vw;
+        text-align: center;
+        /*width: 100%;*/
+    }
+
+
+    footer {
+        background-color: #DCEEE9;
+        font-family: Roboto;
+        font-size: 1.5vw;
+    }
 }
 
 
-#red-velvet {
-    width: 30%;
-    /*border: 20px solid #DCEEE9;*/
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+table {
+    border-collapse: collapse;
+    line-height: 1.1;
+    font-family: Roboto;
+    background:  radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
+    color: #0C213B;
+    margin: 1vw auto;
+    /*border-weight: 2px;*/
+    /*border: black;*/
+}
+th {
+    border: 1px solid #A9E2CC;
+    padding: 1vw;
 }
 
-#milk-slice {
-    width: 30%;
+td {
+    border: 1px solid #A9E2CC;
+    padding: 1vw;
 }
 
-#strawberry {
-    width: 30%;
+caption {
+    border: 1px solid #A9E2CC;
+    padding: 1vw;
 }
-
-
-
-main {
-    background-color: #E1EDF7;
-}
-
-
-h3 {
-    font-family: sans-serif;
-}
-
-footer {
-    background-color: #DCEEE9;
-    font-family: sans-serif;
-}
-
-
 

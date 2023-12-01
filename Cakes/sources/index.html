@@ -5,53 +5,121 @@
     <title>Cakes</title>
     <link rel="icon" href="images/logo.svg" type="image/svg">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Montserrat:wght@100&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
     <header>
-        <img class="cake" src="images/logo.svg">
+        <img class="cakeLogo" src="images/logo.svg">
         <img class="name" src="images/name.svg">
         <img class="flower" src="images/flow.svg">
     </header>
 
-    <nav>
-        <ul>
-            <li>Торты</li>
-            <li>Панкейки</li>
-            <li>Пирожные</li>
-            <li>Доставка</li>
-            <li>Самовывоз</li>
-        </ul>
-    </nav>
-
-
     <main>
-        <h3>Cakes</h3>
-        <div class = "cakes">
-            <div class = "red-violet">
-                <img id="red-velvet" src="images/red-velvet.svg">
-                honey cake
-                price: 2000
-            </div>
+        <nav>
+            <a href = "#">Торты</a>
+            <a href = "#">Панкейки</a>
+            <a href = "#">Выпечка</a>
+            <a href = "#">Пирожные</a>
+            <a href = "#">Доставка</a>
+            <a href = "#">Самовывоз</a>
+            <a href = "#">На день рождения</a>
+        </nav>
+        <div class="content">
+            <h3>Торты</h3>
+            <div class = "cakes">
+                <div class = "cake">
+                    <span>Торт "Oreo"</span>
+                    <p></p>
+                    <div class="wrapper">
+                        <img id="red-velvet" src="images/red-velvet.svg" alt="red-violet">
+                    </div>
 
-            <div class = "milk-slice">
-                <img id="milk-slice" src="images/milk-slice.svg">
-                oreo
-                price: 3000
-            </div>
 
-            <div class = "strawberry">
-                <img id="strawberry" src="images/strawberry.svg">
-                honey
-                price: 1500
+                    <span>Цена за 1 кг: 1000 руб.</span>
+                </div>
+
+                <div class = "cake">
+                    <span>Торт "Молочный ломтик"</span>
+                    <p></p>
+                    <div class="wrapper">
+                        <img id="milk-slice" src="images/milk-slice.svg" alt="milk-slice">
+                    </div>
+                    <p></p>
+
+                    <span>price: 3000</span>
+                </div>
+
+                <div class = "cake">
+                    <span>Торт клубничный</span>
+                    <p></p>
+                    <div class = "wrapper">
+                        <img id="strawberry" src="images/strawberry.svg" alt="strawberry">
+                    </div>
+                    <p></p>
+
+                    <span>price: 3000</span>
+                </div>
+
+                <div class = "cake">
+                    <span>Торт еще один торт</span>
+                    <p></p>
+                    <div class = "wrapper">
+                        <img id="strawberry1" src="images/strawberry.svg" alt="strawberry">
+                    </div>
+
+
+                    <span>price: 3000</span>
+                </div>
             </div>
         </div>
-    </main>
 
+    </main>
 
     <footer>
         <h4>Contacts: </h4>
         <h5>Instagram: </h5>
         <h5>Telegram: </h5>
+        <table>
+            <caption>
+                Стоимость доставки по СПБ и ЛО
+            </caption>
+
+            <tr>
+                <th>Вес, кг</th>
+                <th>1-2</th>
+                <th>2-3</th>
+                <th>3-4</th>
+            </tr>
+            <tr>
+                <td>Санкт-Петербург</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Всеволожск</td>
+                <td>350</td>
+                <td>450</td>
+                <td>550</td>
+            </tr>
+            <tr>
+                <td>Пушкин</td>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>Остальные</td>
+                <td>500</td>
+                <td>750</td>
+                <td>850</td>
+
+            </tr>
+        </table>
     </footer>
 
 </body>
