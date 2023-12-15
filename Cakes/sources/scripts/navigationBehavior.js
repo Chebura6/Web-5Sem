@@ -6,7 +6,6 @@ console.log(menuItems);
 menuItems.forEach(function(item) {
 
     let href = item.getAttribute('href')
-    console.log('href: ' + href)
     if (href === currentPage) {
         item.classList.add('active');
     }
