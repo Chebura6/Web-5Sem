@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Cakes</title>
@@ -12,8 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="scripts/loadTimeScript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 </head>
 <body>
+
     <header>
         <img class="cakeLogo" src="images/logo.svg">
         <img class="name" src="images/name.svg">
@@ -29,57 +31,33 @@
             <a href = "assortment.html">Ассортимент</a>
         </nav>
         <script src="scripts/navigationBehavior.js"></script>
-        <div class="content">
-            <h3>Торты</h3>
-            <div class = "items">
-                <div class = "item">
-                    <span>Торт "Oreo"</span>
-                    <p></p>
-                    <div class="wrapper">
-                        <img id="red-velvet" src="images/red-velvet.svg" alt="red-violet">
-                    </div>
 
-
-                    <span>Цена за 1 кг: 1000 руб.</span>
-                </div>
-
-                <div class = "item">
-                    <span>Торт "Молочный ломтик"</span>
-                    <p></p>
-                    <div class="wrapper">
-                        <img id="milk-slice" src="images/milk-slice.svg" alt="milk-slice">
-                    </div>
-                    <p></p>
-
-                    <span>price: 3000</span>
-                </div>
-
-                <div class = "item">
-                    <span>Торт клубничный</span>
-                    <p></p>
-                    <div class = "wrapper">
-                        <img id="strawberry" src="images/strawberry.svg" alt="strawberry">
-                    </div>
-                    <p></p>
-
-                    <span>price: 3000</span>
-                </div>
-
-                <div class = "item">
-                    <span>Торт еще один торт</span>
-                    <p></p>
-                    <div class = "wrapper">
-                        <img id="strawberry1" src="images/strawberry.svg" alt="strawberry">
-                    </div>
-
-
-                    <span>price: 3000</span>
-                </div>
-            </div>
-        </div>
+    <div class = "form">
+        <form id="Assortment">
+            <label for="type">Название</label>
+            <select id="type" name="type">
+                <option value=""></option>
+                <option value="Торт">Торт</option>
+                <option value="Выпечка">Выпечка</option>
+                <option value="День рождения">День рождения</option>
+                <option value="Пирожные">Пирожные</option>
+                <!-- добавить другие жанры -->
+            </select>
+            <label for="taste">Вкус</label>
+            <input type="text" id="taste" name="taste"><br>
+            <label for="weight">Вес</label>
+            <input type="text" id="weight" name="weight"><br>
+            <label for="priceFrom">Цена от:</label>
+            <input type="number" id="priceFrom" name="priceFrom"><br>
+            <label for="priceTo">Цена до:</label>
+            <input type="number" id="priceTo" name="priceTo"><br>
+            <input type="submit" value="Сгенерировать таблицу">
+        </form>
+        <div id="resultTable"></div>
+        <script src="scripts/tableGenerator.js"></script>
+    </div>
 
     </main>
-
     <footer>
         <h4>Contacts: </h4>
         <h5>Instagram: </h5>
