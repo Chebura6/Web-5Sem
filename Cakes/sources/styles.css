@@ -26,6 +26,41 @@ a:hover {
     padding: 1vw;
 }
 
+/*.reviews {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+.footerReviews {
+
+    padding: 1vw;
+    margin: 1vw;
+    background-color: #B4DAF2;
+    border-radius: 10%;
+}
+
+
+
+.loader {
+    display: none;
+    width: 2vw;
+    height: 2vw;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    /*display: inline-block;*/
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 
 
